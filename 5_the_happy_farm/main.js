@@ -6,7 +6,9 @@ function initializeApp() {
     new DealOneCardToPlayerEachTurn();
     new Plant();
     new MoveCardUpFarmSeasons();
-   coinAction = new takeCoinAction();
+
+    coinAction = new takeCoinAction();
+
     new UserAnimalCards();
     new CompareFeedToHarvest();
     new BuyCropCard();
@@ -93,7 +95,7 @@ class MoveCardUpFarmSeasons {
        
 }
 class takeCoinAction {
-    constructor() {
+    constructor () {
          this.moneyAmount = 2;
          $('.moneySack').text(this.moneyAmount);
         $('.takeCoin').on('click', this.addCoin.bind(this));
