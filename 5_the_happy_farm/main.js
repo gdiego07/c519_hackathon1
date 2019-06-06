@@ -1,17 +1,34 @@
 $(document).ready(initializeApp);
 
-var coinAction;   
+var coinAction;
+var countClicks;   
 function initializeApp() {
 
     new DealOneCardToPlayerEachTurn();
     new Plant();
     new MoveCardUpFarmSeasons();
-
     coinAction = new takeCoinAction();
-
     new UserAnimalCards();
     new CompareFeedToHarvest();
     new BuyCropCard();
+    countClicks = new CountClicks();
+}
+class CountClicks {
+    constructor () {
+        this.counter = 0;
+        $('.takeCoin').on('click', this.counterFunction.bind(this));
+        $(".CropCard1").on("click", this.counterFunction.bind(this));
+        $(".feedingCard1").on("click", this.counterFunction.bind(this));
+        $(".playerCropCard").on("click", this.counterFunction.bind(this));
+    }
+    counterFunction () {
+        this.counter++;
+        if ((this.counter === 2)) {
+          this.counter = 0;
+          console.log("Counter", this.counter);
+          alert('Next Player')
+        }
+    }
 }
 
 class UserAnimalCards {
