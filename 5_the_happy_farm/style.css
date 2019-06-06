@@ -1,3 +1,6 @@
+body{
+    background-image: url("assets/ori_84053_8c77fdd76ead0e4b0acd37775d57f2ebfbed8fa1_farm-background.jpg");
+}
 header{
     position:fixed;
     border: solid;
@@ -129,6 +132,16 @@ header{
     top:69%;
 
 }
+.carrotimage{
+background-image: url("assets/687474703a2f2f6661746865726765656b2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30392f6d7968617070796661726d5f736565642e6a7067.jpg");
+}
+.happycowimage{
+    background-image: url("assets/Smiling-Face-Cow-Funny-Picture.jpg");
+}
+.sadcowimage{
+background-image: url("assets/download.jpg");
+}
+
 
 
 
