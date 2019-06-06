@@ -1,15 +1,13 @@
 $(document).ready(initializeApp);
 
-
-    
+var coinAction;   
 function initializeApp() {
 
     new DealOneCardToPlayerEachTurn();
     new Plant();
     new MoveCardUpFarmSeasons();
+   coinAction = new takeCoinAction()
 }
-
-
 
 class DealOneCardToPlayerEachTurn {
 
@@ -23,7 +21,7 @@ class DealOneCardToPlayerEachTurn {
 
 }
 class Plant {
-
+  
     constructor(click) {
         $(".playerCropCard").on("click", this.plant);
     }
@@ -54,5 +52,21 @@ class MoveCardUpFarmSeasons {
         $(".autumn").text("autumn");
         $(".farmBoard").append(" carrot harvest in autumn");
     }
+       
+}
+class takeCoinAction {
+    constructor() {
+         this.moneyAmount = 2;
+         $('.moneySack').text(this.moneyAmount);
+        $('.takeCoin').on('click', this.addCoin.bind(this));
+    }
 
+
+    addCoin() {
+        console.log('addcoin');
+           this.moneyAmount += 1 ;
+        $('.moneySack').text(this.moneyAmount);
+        console.log(this.moneyAmount)
+
+    }
 }
