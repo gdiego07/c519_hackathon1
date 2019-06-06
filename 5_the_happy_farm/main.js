@@ -1,12 +1,14 @@
 $(document).ready(initializeApp);
 
-var coinAction;
+var coinAction;   
 function initializeApp() {
-dealcard
+
     new DealOneCardToPlayerEachTurn();
     new Plant();
-    coinAction = new takeCoinAction();
+    new MoveCardUpFarmSeasons();
+   coinAction = new takeCoinAction()
 }
+
 class DealOneCardToPlayerEachTurn {
 
     constructor(){
@@ -19,15 +21,38 @@ class DealOneCardToPlayerEachTurn {
 
 }
 class Plant {
-
-    constructor(click){
-        $(".playerCropCard").on("click",this.plant);
+  
+    constructor(click) {
+        $(".playerCropCard").on("click", this.plant);
     }
-    plant(){
+
+    plant() {
         $(".spring").append(" carrot has been planted");
         $(".playerCropCard").text("no cards");
-      
-      
+    }
+}
+
+class MoveCardUpFarmSeasons {
+
+    constructor(){
+        $(".spring").on("click",this.moveUpToSummer);
+        $(".summer").on("click",this.moveUpToAutumn);
+        $(".autumn").on("click",this.storeInFarm);
+    }
+
+    moveUpToSummer(){
+        $(".spring").text("spring");
+        $(".summer").append(" carrot can be harvest");
+    }
+    moveUpToAutumn(){
+        $(".summer").text("summer");
+        $(".autumn").append(" carrot harvest in autumn");
+    }
+    storeInFarm(){
+        $(".autumn").text("autumn");
+        $(".farmBoard").append(" carrot harvest in autumn");
+    }
+       
 }
 class takeCoinAction {
     constructor() {
