@@ -3,8 +3,6 @@ body{
 }
 header{
     position:fixed;
-    border: solid;
-    border-color:  black;
     height: 7%;
     width: 1560px;
     text-align:center;
@@ -13,7 +11,7 @@ header{
 #playersStuff{
     position:fixed;
     border: solid;
-    border-color: red;
+    border-color: black;
     height: 85%;
     width: 30.5%;
     display: inline-block;
@@ -23,7 +21,7 @@ header{
 #farmBoardWithSeasons{
     position:fixed;
     border: solid;
-    border-color: blue;
+    border-color: black;
     height: 85%;
     width: 33%;
     display: inline-block;
@@ -33,7 +31,7 @@ header{
 #feedingCardCropCard {
     position:fixed;
     border: solid;
-    border-color: green;
+    border-color: black;
     height: 85%;
     width: 31%;
     display: inline-block;
@@ -42,70 +40,91 @@ header{
 }
 
 .CropCard1{
-    border: 3px solid blue;
+    font-size:30px;
+    color:green;
+    border: 3px solid black;
     height: 43vh;
 }
 .feedingCard1{
-    border: 3px solid red;
+    font-size:30px;
+    color:green;
+    border: 3px solid black;
     height: 40vh;
 }
 .playerCropCard{
+    font-size:30px;
+    color: green;
     position:fixed;
     border:solid;
-    border-color: green;
+    border-color: black;
     height: 27%;
     width: 15%;
 
 }
 .frontAnimalCard{
+    font-size:30px;
+    color:green;
     position: fixed;
     border:solid;
-    border-color: darkblue;
+    border-color: black;
     height: 30%;
     width: 15%;
     top:39%
 }
 .tailAnimalCard{
+    font-size:30px;
+    color:green;
     position: fixed;
     border:solid;
-    border-color: firebrick;
+    border-color: black;
     height: 30%;
     width: 15%;
     left:16.5%;
     top:39%;
+    background-image: url("assets/cow-field-one-health-uc-davis.jpg");
 
 }
 .moneySack{
+    font-size:30px;
+    color:green;
     position: fixed;
     border:solid;
-    border-color: fuchsia;
+    border-color: black;
     height:27%;
     width:15%;
     top:69.5%;
+    background-image: url("assets/2846money_sack.jpg");
 
 
 }
 .takeCoin{
-
+    font-size:30px;
+    color:green;
     position: fixed;
     border:solid;
-    border-color: fuchsia;
+    border-color: black;
     height:27%;
     width:15%;
     top:69.5%;
     left:16.5%;
+    background-image: url("assets/Take-Advantage-of-Junk-Coin-Bins-at-Coin-Shops-Step-7.jpg");
 
 
 }
 .farmBoard{
+    font-size:30px;
+    color:green;
     border:solid;
+    border-color:black;
     position:fixed;
     height:85%;
     width:18%;
 }
 .autumn{
+    font-size:30px;
+    color:green;
     border:solid;
-    border-color:red;
+    border-color:black;
     position:fixed;
     height:27%;
     right:35%;
@@ -113,8 +132,10 @@ header{
 
 }
 .summer{
+    font-size:30px;
+    color:green;
     border:solid;
-    border-color:green;
+    border-color:black;
     position:fixed;
     height:27%;
     right:35%;
@@ -123,8 +144,10 @@ header{
 
 }
 .spring{
+    font-size:30px;
+    color:green;
     border:solid;
-    border-color:blue;
+    border-color:black;
     position:fixed;
     height:27%;
     right:35%;
@@ -133,14 +156,16 @@ header{
 
 }
 .carrotimage{
-background-image: url("assets/687474703a2f2f6661746865726765656b2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30392f6d7968617070796661726d5f736565642e6a7067.jpg");
+    background-image: url("assets/687474703a2f2f6661746865726765656b2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30392f6d7968617070796661726d5f736565642e6a7067.jpg");
 }
 .happycowimage{
     background-image: url("assets/Smiling-Face-Cow-Funny-Picture.jpg");
 }
 .sadcowimage{
-background-image: url("assets/download.jpg");
+    background-image: url("assets/download.jpg");
 }
+
+
 
 
 

@@ -149,7 +149,7 @@ class CompareFeedToHarvest {
 class BuyCropCard {
 
     constructor(){
-        $(".CropCard1").on("click",this.buyCropCard)
+        $(".CropCard1").on("click",this.buyCropCard);
     }
     buyCropCard(){
         if ($(".moneySack").text()>=1) {
@@ -158,10 +158,12 @@ class BuyCropCard {
           var y = parseInt(x);
           var z = --y;
           $(".moneySack").text(z);
-
+          $('.playerCropCard').addClass('carrotimage');
 
         }
+
     }
+
 }
 
 
