@@ -8,6 +8,8 @@ function initializeApp() {
     new MoveCardUpFarmSeasons();
    coinAction = new takeCoinAction();
     new UserAnimalCards();
+    new CompareFeedToHarvest();
+    new BuyCropCard();
 }
 
 class UserAnimalCards {
@@ -35,11 +37,11 @@ class UserAnimalCards {
 }
 class DealOneCardToPlayerEachTurn {
 
-    constructor(){
+    constructor() {
         $(".playerCropCard").text("carrot click to plant");
     }
 
-    changeCard (){
+    changeCard() {
 
     }
 
@@ -74,7 +76,8 @@ class MoveCardUpFarmSeasons {
     }
     storeInFarm(){
         $(".autumn").text("autumn");
-        $(".farmBoard").append(" carrot harvest in autumn");
+        $(".farmBoard").append(" carrot ready to buy feed card");
+        $(".farmBoard").addClass("carrot")
     }
        
 }
@@ -94,3 +97,43 @@ class takeCoinAction {
 
     }
 }
+class CompareFeedToHarvest {
+
+    constructor() {
+        $(".feedingCard1").on("click", this.compareCards)
+    }
+
+    compareCards() {
+        if ($(".farmBoard").hasClass("carrot")&& $(".feedingCard1").hasClass("carrot")) {
+            $(".frontAnimalCard").text("happy cow 9000");
+
+        }
+    }
+}
+class BuyCropCard {
+
+    constructor(){
+        $(".CropCard1").on("click",this.buyCropCard)
+    }
+    buyCropCard(){
+        if ($(".moneySack").text()>=1) {
+            $(".playerCropCard").text("carrot");
+          var x=  $(".moneySack").text();
+          var y = parseInt(x);
+          var z = --y;
+          $(".moneySack").text(z);
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
