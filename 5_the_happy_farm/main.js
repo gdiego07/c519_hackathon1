@@ -6,7 +6,9 @@ function initializeApp() {
     new DealOneCardToPlayerEachTurn();
     new Plant();
     new MoveCardUpFarmSeasons();
+
     coinAction = new takeCoinAction();
+
     new UserAnimalCards();
     new CompareFeedToHarvest();
     new BuyCropCard();
