@@ -55,7 +55,7 @@ header{
 
 }
 .frontAnimalCard{
-    position:fixed;
+    position: fixed;
     border:solid;
     border-color: darkblue;
     height: 30%;
