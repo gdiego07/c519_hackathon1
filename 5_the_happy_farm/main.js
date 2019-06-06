@@ -12,7 +12,7 @@ class UserAnimalCards {
         
     }
     getSadFaceAnimal() {
-        $('.frontAnimalCard').text('cowSadFace');
+        $('.frontAnimalCard').text('cowSadFace -3');
       console.log('Sad')
        
     }
