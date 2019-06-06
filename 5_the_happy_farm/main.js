@@ -35,7 +35,6 @@ class UserAnimalCards {
         $(".frontAnimalCard").text("cowHappyFace");
     }
 }
-
 class DealOneCardToPlayerEachTurn {
 
     constructor() {
@@ -117,7 +116,6 @@ class BuyCropCard {
         $(".CropCard1").on("click",this.buyCropCard)
     }
     buyCropCard(){
-debugger;
         if ($(".moneySack").text()>=1) {
             $(".playerCropCard").text("carrot");
           var x=  $(".moneySack").text();
