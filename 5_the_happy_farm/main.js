@@ -6,7 +6,7 @@ function initializeApp() {
     new DealOneCardToPlayerEachTurn();
     new Plant();
     new MoveCardUpFarmSeasons();
-   coinAction = new takeCoinAction()
+    coinAction = new takeCoinAction()
 }
 
 class DealOneCardToPlayerEachTurn {
