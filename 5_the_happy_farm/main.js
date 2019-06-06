@@ -15,6 +15,7 @@ function initializeApp() {
 }
 class CountClicks {
     constructor () {
+        this.countsTheCounter =0;
         this.counter = 0;
         $('.takeCoin').on('click', this.counterFunction.bind(this));
         $(".CropCard1").on("click", this.counterFunction.bind(this));
@@ -26,14 +27,36 @@ class CountClicks {
         if ((this.counter === 2)) {
           this.counter = 0;
           console.log("Counter", this.counter);
-          alert('Next Player')
+          alert('Next Player');
+
+         if($(".spring").hasClass("carrotimage")){
+            $(".spring").removeClass("carrotimage");
+            $(".summer").addClass("carrotimage");
+            return;
+         }
+
+            if($(".summer").hasClass("carrotimage")){
+                $(".summer").removeClass("carrotimage");
+                $(".autumn").addClass("carrotimage");
+                return;
+            }
+
+            if($(".autumn").hasClass("carrotimage")){
+                $(".autumn").removeClass("carrotimage");
+                $(".farmBoard").addClass("carrotimage");
+                return;
+            }
+
+
         }
     }
+
 }
 
 class UserAnimalCards {
     constructor() {
         this.sadFace = true;
+        this.getSadFaceAnimal();
         $(".playerAnimalCard").on("click", this.getSadFaceAnimal);
         $(".playerAnimalCard").on("click", this.getAnimalTail);
 
