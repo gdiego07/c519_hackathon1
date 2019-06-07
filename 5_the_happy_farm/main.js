@@ -105,7 +105,7 @@ class MoveCardUpFarmSeasons {
     storeInFarm(){
         $(".autumn").text("autumn");
         $('.autumn').removeClass('carrotimage');
-        $('.farmBoard').addClass('carrotimage');
+        $('.harvestedCrop').addClass('carrotimage');
         $(".farmBoard").append(" carrot ready to buy feed card");
         $(".farmBoard").addClass("carrot")
     }
@@ -149,7 +149,7 @@ class CompareFeedToHarvest {
 class BuyCropCard {
 
     constructor(){
-        $(".CropCard1").on("click",this.buyCropCard)
+        $(".CropCard1").on("click",this.buyCropCard);
     }
     buyCropCard(){
         if ($(".moneySack").text()>=1) {
@@ -158,10 +158,11 @@ class BuyCropCard {
           var y = parseInt(x);
           var z = --y;
           $(".moneySack").text(z);
-
-
+          $('.playerCropCard').addClass('carrotimage');
         }
+
     }
+
 }
 
 
