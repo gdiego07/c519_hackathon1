@@ -141,7 +141,9 @@ background-image: url("assets/687474703a2f2f6661746865726765656b2e636f6d2f77702d
 .sadcowimage{
 background-image: url("assets/download.jpg");
 }
-
+.hidden {
+    display: none;
+}
 
 
 
