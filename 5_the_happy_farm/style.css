@@ -44,12 +44,14 @@ header{
     color:green;
     border: 3px solid black;
     height: 43vh;
+    background-image: url("assets/carrot3.jpg");
 }
 .feedingCard1{
     font-size:30px;
     color:green;
     border: 3px solid black;
     height: 40vh;
+    background-image: url("assets/fullcow.jpg");
 }
 .playerCropCard{
     font-size:30px;
@@ -164,6 +166,22 @@ header{
 .sadcowimage{
     background-image: url("assets/download.jpg");
 }
+.harvestedCrop{
+    height:31%;
+    width:100%;
+}
+.hidden{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
 
 
 

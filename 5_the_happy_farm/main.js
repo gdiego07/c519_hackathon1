@@ -105,7 +105,7 @@ class MoveCardUpFarmSeasons {
     storeInFarm(){
         $(".autumn").text("autumn");
         $('.autumn').removeClass('carrotimage');
-        $('.farmBoard').addClass('carrotimage');
+        $('.harvestedCrop').addClass('carrotimage');
         $(".farmBoard").append(" carrot ready to buy feed card");
         $(".farmBoard").addClass("carrot")
     }
@@ -159,7 +159,6 @@ class BuyCropCard {
           var z = --y;
           $(".moneySack").text(z);
           $('.playerCropCard').addClass('carrotimage');
-
         }
 
     }
