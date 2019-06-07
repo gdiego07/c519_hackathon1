@@ -44,6 +44,7 @@ class CountClicks {
             if($(".autumn").hasClass("carrotimage")){
                 $(".autumn").removeClass("carrotimage");
                 $(".farmBoard").addClass("carrotimage");
+                $('.farmBoard').addClass('carrot');
                 return;
             }
 
@@ -115,6 +116,7 @@ class MoveCardUpFarmSeasons {
         // $(".spring").on("click",this.moveUpToSummer);
         // $(".summer").on("click",this.moveUpToAutumn);
         // $(".autumn").on("click",this.storeInFarm);
+       // $('.feedingCard1').on('click',this.storeInFarm);
     }
 
     moveUpToSummer(){
@@ -135,8 +137,9 @@ class MoveCardUpFarmSeasons {
         $('.autumn').removeClass('carrotimage');
         $('.harvestedCrop').addClass('carrotimage');
         $(".farmBoard").append(" carrot ready to buy feed card");
-        $(".farmBoard").addClass("carrot")
+        $(".farmBoard").addClass("carrot");
     }
+
        
 }
 class takeCoinAction {
