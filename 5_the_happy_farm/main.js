@@ -112,9 +112,9 @@ class Plant {
 class MoveCardUpFarmSeasons {
 
     constructor(){
-        $(".spring").on("click",this.moveUpToSummer);
-        $(".summer").on("click",this.moveUpToAutumn);
-        $(".autumn").on("click",this.storeInFarm);
+        // $(".spring").on("click",this.moveUpToSummer);
+        // $(".summer").on("click",this.moveUpToAutumn);
+        // $(".autumn").on("click",this.storeInFarm);
     }
 
     moveUpToSummer(){
