@@ -45,13 +45,18 @@ header{
     border: 3px solid black;
     height: 43vh;
     background-image: url("assets/carrot3.jpg");
+    background-size:cover;
 }
 .feedingCard1{
     font-size:30px;
     color:green;
     border: 3px solid black;
-    height: 40vh;
+    height: 41vh;
     background-image: url("assets/fullcow.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+
 }
 .playerCropCard{
     font-size:30px;
@@ -61,6 +66,7 @@ header{
     border-color: black;
     height: 27%;
     width: 15%;
+    background-size:cover;
 
 }
 .frontAnimalCard{
@@ -72,6 +78,7 @@ header{
     height: 30%;
     width: 15%;
     top:39%
+
 }
 .tailAnimalCard{
     font-size:30px;
@@ -84,7 +91,7 @@ header{
     left:16.5%;
     top:39%;
     background-image: url("assets/cow-field-one-health-uc-davis.jpg");
-
+    background-size:cover;
 }
 .moneySack{
     font-size:30px;
@@ -96,7 +103,7 @@ header{
     width:15%;
     top:69.5%;
     background-image: url("assets/2846money_sack.jpg");
-
+    background-size:cover;
 
 }
 .takeCoin{
@@ -110,7 +117,7 @@ header{
     top:69.5%;
     left:16.5%;
     background-image: url("assets/Take-Advantage-of-Junk-Coin-Bins-at-Coin-Shops-Step-7.jpg");
-
+    background-size:cover;
 
 }
 .farmBoard{
@@ -131,6 +138,7 @@ header{
     height:27%;
     right:35%;
     width:14%;
+    background-size:cover;
 
 }
 .summer{
@@ -143,6 +151,7 @@ header{
     right:35%;
     width:14%;
     top:40%;
+    background-size:cover;
 
 }
 .spring{
@@ -155,6 +164,7 @@ header{
     right:35%;
     width:14%;
     top:69%;
+    background-size:cover;
 
 }
 .carrotimage{
@@ -165,6 +175,12 @@ header{
 }
 .sadcowimage{
     background-image: url("assets/download.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+
+
+
 }
 .harvestedCrop{
     height:31%;
@@ -176,13 +192,6 @@ header{
 .hidden {
     display: none;
 }
-
-
-
-
-
-
-
 
 
 
