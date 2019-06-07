@@ -55,16 +55,21 @@ class CountClicks {
 
 class UserAnimalCards {
     constructor() {
-        this.sadFace = true;
+
+        // var sadCowImage = $("<img>", {
+        //     "src": 'assets/download.jpg',
+        // });
+        // $("#sad").append(sadCowImage);
         this.getSadFaceAnimal();
-        $(".playerAnimalCard").on("click", this.getSadFaceAnimal);
-        $(".playerAnimalCard").on("click", this.getAnimalTail);
+
 
     }
 
     getSadFaceAnimal() {
         $('.frontAnimalCard').text('cowSadFace -3');
         $('.frontAnimalCard').addClass('sadcowimage');
+        //  $(".playerAnimalCard").on("click", this.getSadFaceAnimal);
+        //  $(".playerAnimalCard").on("click", this.getAnimalTail);
         console.log('Sad')
 
     }
@@ -154,7 +159,7 @@ class CompareFeedToHarvest {
 
     constructor() {
         $(".feedingCard1").on("click", this.compareCards);
-        $('.frontAnimalCard').removeClass('sadcowimage');
+        // $('.frontAnimalCard').removeClass('sadcowimage');
 
     }
 
