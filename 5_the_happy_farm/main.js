@@ -15,6 +15,7 @@ function initializeApp() {
 }
 class CountClicks {
     constructor () {
+        this.countsTheCounter =0;
         this.counter = 0;
         $('.takeCoin').on('click', this.counterFunction.bind(this));
         $(".CropCard1").on("click", this.counterFunction.bind(this));
@@ -26,18 +27,42 @@ class CountClicks {
         if ((this.counter === 2)) {
           this.counter = 0;
           console.log("Counter", this.counter);
-          alert('Next Player')
+          alert('Next Player');
+
+         if($(".spring").hasClass("carrotimage")){
+            $(".spring").removeClass("carrotimage");
+            $(".summer").addClass("carrotimage");
+            return;
+         }
+
+            if($(".summer").hasClass("carrotimage")){
+                $(".summer").removeClass("carrotimage");
+                $(".autumn").addClass("carrotimage");
+                return;
+            }
+
+            if($(".autumn").hasClass("carrotimage")){
+                $(".autumn").removeClass("carrotimage");
+                $(".farmBoard").addClass("carrotimage");
+                return;
+            }
+
+
         }
     }
+
 }
 
 class UserAnimalCards {
     constructor() {
+
         // var sadCowImage = $("<img>", {
         //     "src": 'assets/download.jpg',
         // });
         // $("#sad").append(sadCowImage);
         this.getSadFaceAnimal();
+
+
     }
 
     getSadFaceAnimal() {
@@ -108,7 +133,7 @@ class MoveCardUpFarmSeasons {
     storeInFarm(){
         $(".autumn").text("autumn");
         $('.autumn').removeClass('carrotimage');
-        $('.farmBoard').addClass('carrotimage');
+        $('.harvestedCrop').addClass('carrotimage');
         $(".farmBoard").append(" carrot ready to buy feed card");
         $(".farmBoard").addClass("carrot")
     }
@@ -152,7 +177,7 @@ class CompareFeedToHarvest {
 class BuyCropCard {
 
     constructor(){
-        $(".CropCard1").on("click",this.buyCropCard)
+        $(".CropCard1").on("click",this.buyCropCard);
     }
     buyCropCard(){
         if ($(".moneySack").text()>=1) {
@@ -161,10 +186,11 @@ class BuyCropCard {
           var y = parseInt(x);
           var z = --y;
           $(".moneySack").text(z);
-
-
+          $('.playerCropCard').addClass('carrotimage');
         }
+
     }
+
 }
 
 
