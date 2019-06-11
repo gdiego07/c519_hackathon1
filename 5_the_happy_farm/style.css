@@ -142,6 +142,7 @@ header{
 
 }
 .summer{
+    box-shadow: 1px 1px antiquewhite;
     font-size:30px;
     color:green;
     border:solid;
@@ -186,12 +187,8 @@ header{
     height:31%;
     width:100%;
 }
-.hidden{
-    display:none;
-}
-.hidden {
-    display: none;
-}
+
+
 
 
 

@@ -29,24 +29,24 @@ class CountClicks {
           console.log("Counter", this.counter);
           alert('Next Player');
 
-         if($(".spring").hasClass("carrotimage")){
-            $(".spring").removeClass("carrotimage");
-            $(".summer").addClass("carrotimage");
+        if($(".spring").hasClass("carrotimage")){
+        $(".spring").removeClass("carrotimage");
+        $(".summer").addClass("carrotimage");
+        return;
+        }
+
+        if($(".summer").hasClass("carrotimage")){
+            $(".summer").removeClass("carrotimage");
+            $(".autumn").addClass("carrotimage");
             return;
-         }
+        }
 
-            if($(".summer").hasClass("carrotimage")){
-                $(".summer").removeClass("carrotimage");
-                $(".autumn").addClass("carrotimage");
-                return;
-            }
-
-            if($(".autumn").hasClass("carrotimage")){
-                $(".autumn").removeClass("carrotimage");
-                $(".farmBoard").addClass("carrotimage");
-                $('.farmBoard').addClass('carrot');
-                return;
-            }
+        if($(".autumn").hasClass("carrotimage")){
+            $(".autumn").removeClass("carrotimage");
+            $(".farmBoard").addClass("carrotimage");
+            $('.farmBoard').addClass('carrot');
+            return;
+        }
 
 
         }
@@ -57,27 +57,21 @@ class CountClicks {
 class UserAnimalCards {
     constructor() {
 
-        // var sadCowImage = $("<img>", {
-        //     "src": 'assets/download.jpg',
-        // });
-        // $("#sad").append(sadCowImage);
-        this.getSadFaceAnimal();
+    this.getSadFaceAnimal();
 
 
-    }
+}
 
     getSadFaceAnimal() {
         $('.frontAnimalCard').text('cowSadFace -3');
         $('.frontAnimalCard').addClass('sadcowimage');
-        //  $(".playerAnimalCard").on("click", this.getSadFaceAnimal);
-        //  $(".playerAnimalCard").on("click", this.getAnimalTail);
-        console.log('Sad')
+
 
     }
 
     getAnimalTail() {
         $('.tailAnimalCard').text('cowTail');
-        console.log('Im a tail')
+    
     }
 
     addHappyFace() {
@@ -91,9 +85,6 @@ class DealOneCardToPlayerEachTurn {
         $('.playerCropCard').addClass('carrotimage')
     }
 
-    changeCard() {
-
-    }
 
 }
 class Plant {
@@ -113,10 +104,7 @@ class Plant {
 class MoveCardUpFarmSeasons {
 
     constructor(){
-        // $(".spring").on("click",this.moveUpToSummer);
-        // $(".summer").on("click",this.moveUpToAutumn);
-        // $(".autumn").on("click",this.storeInFarm);
-       // $('.feedingCard1').on('click',this.storeInFarm);
+
     }
 
     moveUpToSummer(){
@@ -162,7 +150,7 @@ class CompareFeedToHarvest {
 
     constructor() {
         $(".feedingCard1").on("click", this.compareCards);
-        // $('.frontAnimalCard').removeClass('sadcowimage');
+    
 
     }
 
